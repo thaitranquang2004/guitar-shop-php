@@ -1,12 +1,14 @@
 <?php
-session_start();  // Bắt đầu session cho giỏ hàng và login
-$host = 'localhost';
-$dbname = 'guitar_shop';
-$username = 'root';
-$password = '';  // Default WAMP
+session_start();
+$host = $_ENV['DB_HOST'] ?? 'localhost';
+$port = $_ENV['DB_PORT'] ?? '5432';
+$dbname = $_ENV['DB_NAME'] ?? 'guitar_shop';
+$username = $_ENV['DB_USERNAME'] ?? 'root';
+$password = $_ENV['DB_PASSWORD'] ?? '';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;sslmode=require";  // Thay mysql bằng pgsql, thêm sslmode cho Render
+    $pdo = new PDO($dsn, $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
