@@ -1,0 +1,7 @@
+# Bỏ qua file local/test
+.git
+.gitignore
+node_modules
+*.log
+migrate.sql  # Nếu không dùng
+.env  # Nếu có file env local
