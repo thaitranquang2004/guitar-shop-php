@@ -7,11 +7,18 @@ $username = $_ENV['DB_USERNAME'] ?? 'root';
 $password = $_ENV['DB_PASSWORD'] ?? '';
 
 try {
-    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;sslmode=require";  // Thay mysql bằng pgsql, thêm sslmode cho Render
+    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;sslmode=require";
     $pdo = new PDO($dsn, $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
+    try {
+        $dsn = "mysql:host=$host;dbname=$dbname;";
+        $pdo = new PDO($dsn, $username, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
     die("Lỗi kết nối DB: " . $e->getMessage());
+}
 }
 ?>
