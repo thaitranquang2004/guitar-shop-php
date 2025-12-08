@@ -6,7 +6,11 @@ if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'localhost') {
     define('BASE_URL', '/');  // Production Render: Root domain
 }
 
-session_start();
+// Kiểm tra session chưa active thì mới start (tránh duplicate)
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 $host = $_ENV['DB_HOST'] ?? 'localhost';
 $port = $_ENV['DB_PORT'] ?? '5432';
 $dbname = $_ENV['DB_NAME'] ?? 'guitar_shop';
