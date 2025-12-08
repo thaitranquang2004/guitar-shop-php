@@ -19,10 +19,10 @@
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h6 class="text-uppercase mb-3 fw-bold">Liên Kết</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="/guitar-shop-php/index.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Trang Chủ</a></li>
-                        <li class="mb-2"><a href="/guitar-shop-php/pages/shop.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Sản Phẩm</a></li>
-                        <li class="mb-2"><a href="/guitar-shop-php/pages/blog.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Blog</a></li>
-                        <li class="mb-2"><a href="/guitar-shop-php/pages/contact.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Liên Hệ</a></li>
+                        <li class="mb-2"><a href="./index.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Trang Chủ</a></li>
+                        <li class="mb-2"><a href="./pages/shop.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Sản Phẩm</a></li>
+                        <li class="mb-2"><a href="./pages/blog.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Blog</a></li>
+                        <li class="mb-2"><a href="./pages/contact.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Liên Hệ</a></li>
                     </ul>
                 </div>
                 
@@ -86,6 +86,6 @@
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="/guitar-shop-php/assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
