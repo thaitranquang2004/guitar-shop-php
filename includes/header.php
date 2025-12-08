@@ -15,12 +15,12 @@ if (session_status() === PHP_SESSION_NONE) {
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link href="/guitar-shop-php/assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="/guitar-shop-php/index.php">
+            <a class="navbar-brand" href="./index.php">
                 <i class="fas fa-guitar me-2"></i>Guitar Shop
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,19 +29,19 @@ if (session_status() === PHP_SESSION_NONE) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/guitar-shop-php/index.php">Trang Chủ</a>
+                        <a class="nav-link" href="./index.php">Trang Chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/guitar-shop-php/pages/shop.php">Sản Phẩm</a>
+                        <a class="nav-link" href="./pages/shop.php">Sản Phẩm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/guitar-shop-php/pages/blog.php">Blog</a>
+                        <a class="nav-link" href="./pages/blog.php">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/guitar-shop-php/pages/contact.php">Liên Hệ</a>
+                        <a class="nav-link" href="./pages/contact.php">Liên Hệ</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link" href="/guitar-shop-php/pages/cart.php">
+                        <a class="nav-link" href="./pages/cart.php">
                             <i class="fas fa-shopping-cart"></i>
                             <?php if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0): ?>
                                 <span class="badge bg-danger"><?php echo count($_SESSION['cart']); ?></span>
@@ -55,15 +55,15 @@ if (session_status() === PHP_SESSION_NONE) {
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <?php if (isset($_SESSION['admin'])): ?>
-                                    <li><a class="dropdown-item" href="/guitar-shop-php/admin/dashboard.php">Quản Lý Admin</a></li>
+                                    <li><a class="dropdown-item" href="./admin/dashboard.php">Quản Lý Admin</a></li>
                                 <?php endif; ?>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-danger" href="/guitar-shop-php/logout.php">Đăng Xuất</a></li>
+                                <li><a class="dropdown-item text-danger" href="./logout.php">Đăng Xuất</a></li>
                             </ul>
                         </li>
                     <?php else: ?>
                         <li class="nav-item ms-3">
-                            <a class="btn btn-outline-primary btn-sm" href="/guitar-shop-php/admin/index.php">Đăng Nhập</a>
+                            <a class="btn btn-outline-primary btn-sm" href="./admin/index.php">Đăng Nhập</a>
                         </li>
                     <?php endif; ?>
                 </ul>
