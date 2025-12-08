@@ -1,4 +1,5 @@
 <?php 
+ob_start();
 include '../config/database.php'; 
 include '../includes/header.php'; 
 
@@ -128,4 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; 
+ob_end_flush();
+?>
+
