@@ -3,7 +3,7 @@ include '../config/database.php';
 include '../includes/header.php'; 
 
 if (empty($_SESSION['cart'])) {
-    echo "<script>window.location.href='index.php';</script>";
+    echo "<script>window.location.href='". BASE_URL ."index.php';</script>";
     exit;
 }
 
