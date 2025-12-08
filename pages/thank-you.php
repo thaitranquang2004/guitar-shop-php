@@ -13,7 +13,7 @@ $orderId = $_GET['order_id'] ?? 0;
     <p class="mb-5">Chúng tôi sẽ liên hệ với bạn sớm nhất để xác nhận đơn hàng.</p>
     
     <div>
-        <a href="./index.php" class="btn btn-primary rounded-pill px-4 me-2">Về Trang Chủ</a>
+        <a href="<?php echo BASE_URL; ?>index.php" class="btn btn-primary rounded-pill px-4 me-2">Về Trang Chủ</a>
         <a href="shop.php" class="btn btn-outline-secondary rounded-pill px-4">Tiếp Tục Mua Sắm</a>
     </div>
 </div>

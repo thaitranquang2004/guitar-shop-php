@@ -1,4 +1,11 @@
 <?php
+
+if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'localhost') {
+    define('BASE_URL', '/guitar-shop-php/');  // Local: Thêm prefix project folder
+} else {
+    define('BASE_URL', '/');  // Production Render: Root domain
+}
+
 session_start();
 $host = $_ENV['DB_HOST'] ?? 'localhost';
 $port = $_ENV['DB_PORT'] ?? '5432';
