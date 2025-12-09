@@ -10,7 +10,7 @@ if (isset($_SESSION['cart'])) {
 }
 ?>
 
-<div class="container mt-5">
+<div class="container mt-5" style="padding-bottom: 80px;">
     <h2 class="fw-bold mb-4">Giỏ Hàng Của Bạn</h2>
     
     <?php if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])): ?>

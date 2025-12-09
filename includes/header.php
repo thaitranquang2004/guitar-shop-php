@@ -12,6 +12,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <title>Guitar Shop - Đẳng Cấp Âm Nhạc</title>
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -40,6 +41,9 @@ if (session_status() === PHP_SESSION_NONE) {
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo BASE_URL; ?>pages/contact.php">Liên Hệ</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo BASE_URL; ?>pages/lab.php">Lab</a>
+                    </li>
                     <li class="nav-item ms-3">
                         <a class="nav-link" href="<?php echo BASE_URL; ?>pages/cart.php">
                             <i class="fas fa-shopping-cart"></i>
@@ -48,24 +52,9 @@ if (session_status() === PHP_SESSION_NONE) {
                             <?php endif; ?>
                         </a>
                     </li>
-                    <?php if (isset($_SESSION['user'])): ?>
-                        <li class="nav-item dropdown ms-3">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-user"></i> <?php echo htmlspecialchars($_SESSION['user']); ?>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <?php if (isset($_SESSION['admin'])): ?>
-                                    <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>admin/dashboard.php">Quản Lý Admin</a></li>
-                                <?php endif; ?>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-danger" href="<?php echo BASE_URL; ?>logout.php">Đăng Xuất</a></li>
-                            </ul>
-                        </li>
-                    <?php else: ?>
-                        <li class="nav-item ms-3">
-                            <a class="btn btn-outline-primary btn-sm" href="<?php echo BASE_URL; ?>admin/index.php">Đăng Nhập</a>
-                        </li>
-                    <?php endif; ?>
+                    <li class="nav-item ms-3 d-flex justify-content-center align-items-center">
+                        <a class="btn btn-outline-primary btn-sm" href="<?php echo BASE_URL; ?>admin/index.php">Đăng Nhập</a>
+                    </li>
                 </ul>
             </div>
         </div>

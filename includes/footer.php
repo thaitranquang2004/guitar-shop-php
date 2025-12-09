@@ -22,6 +22,7 @@
                         <li class="mb-2"><a href="<?php echo BASE_URL; ?>index.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Trang Chủ</a></li>
                         <li class="mb-2"><a href="<?php echo BASE_URL; ?>pages/shop.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Sản Phẩm</a></li>
                         <li class="mb-2"><a href="<?php echo BASE_URL; ?>pages/blog.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Blog</a></li>
+                        <li class="mb-2"><a href="<?php echo BASE_URL; ?>pages/lab.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Lab</a></li>
                         <li class="mb-2"><a href="<?php echo BASE_URL; ?>pages/contact.php" class="text-white-50 text-decoration-none"><i class="fas fa-chevron-right me-2"></i>Liên Hệ</a></li>
                     </ul>
                 </div>
@@ -31,20 +32,28 @@
                     <h6 class="text-uppercase mb-3 fw-bold">Liên Hệ</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2">
+                            <i class="bi bi-person me-2 text-warning"></i>
+                            Họ và tên: Trần Quang Thái
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-person me-2 text-warning"></i>
+                            MSSV: DH52201421
+                        </li>
+                        <li class="mb-2">
                             <i class="fas fa-map-marker-alt me-2 text-warning"></i>
-                            123 Nguyễn Huệ, Q.1, TP.HCM
+                            180 Cao Lỗ, Phường, Quận 8, Thành phố Hồ Chí Minh
                         </li>
                         <li class="mb-2">
                             <i class="fas fa-envelope me-2 text-warning"></i>
-                            <a href="mailto:contact@guitarshop.com" class="text-white-50 text-decoration-none">contact@guitarshop.com</a>
+                            <a href="mailto:dh52201421@student.stu.edu.vn" class="text-white-50 text-decoration-none">dh52201421@student.stu.edu.vn</a>
                         </li>
                         <li class="mb-2">
                             <i class="fas fa-phone me-2 text-warning"></i>
-                            <a href="tel:+84123456789" class="text-white-50 text-decoration-none">+84 123 456 789</a>
+                            <a href="tel:0369029500" class="text-white-50 text-decoration-none">0369029500</a>
                         </li>
                         <li class="mb-2">
                             <i class="far fa-clock me-2 text-warning"></i>
-                            T2-CN: 9:00 - 21:00
+                            Thứ 2 ca 4 nhóm 10
                         </li>
                     </ul>
                 </div>
@@ -53,13 +62,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h6 class="text-uppercase mb-3 fw-bold">Vị Trí Cửa Hàng</h6>
                     <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4967788971787!2d106.70249631533424!3d10.775311792321675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc9%3A0xb3ff69197b10ec4f!2zTmd1eeG7hW4gSHXhu4csIELhur9uIE5naMOqLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1638888888888!5m2!1sen!2s" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9544104258935!2d106.67525717490723!3d10.737997189408455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2sSaigon%20Technology%20University!5e0!3m2!1sen!2s!4v1765188451872!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
