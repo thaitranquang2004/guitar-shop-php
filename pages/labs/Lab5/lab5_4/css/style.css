@@ -1,0 +1,41 @@
+/* CSS Document */
+.boxleft{border: 2px solid #cc0000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+	margin:3px;
+	padding:3px;
+	
+}
+
+.headerBoxLeft{background:#AADF55; font-weight:bold; margin:3px}
+.boxleft div:hover{background:#FF9F00; font-family:Arial, Helvetica, sans-serif}
+
+.productBox{width:180px; background:#5FA; height:220px; margin:2px; float:left}
+
+.productBox img.productImg{height:120px}
+.productBox div.Productinfo{height:60px; background:
+#FF5FFF}
+
+.containerBox{background:#00DFAA; margin-top:5px; min-height:200px;  -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+	
+	padding:3px;}
+
+.rightBox{
+	background:#00DFAA; margin-top:5px; min-height:100px;  -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+	
+	padding:3px;
+	
+	}
+	
+	.cartImg{height:20px}
