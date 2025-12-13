@@ -89,22 +89,16 @@ include '../includes/header.php';
             </ul>
         </div>
 
-        <!-- Lab 7 -->
-        <div style="background: white; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <h3 style="margin: 0 0 10px; color: #ac0000ff;">Lab 7</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab6.1</a></li>
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab6.2</a></li>
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab6.3</a></li>
-            </ul>
-        </div>
-
         <!-- Lab 8 -->
         <div style="background: white; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin: 0 0 10px; color: #ac0000ff;">Lab 8</h3>
             <ul style="list-style: none; padding: 0;">
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab7.1</a></li>
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab7.2</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab8/lab8_4/index.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.4</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab8/lab8_5/index.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.5</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab8/lab8_1.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.1</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab8/lab8_2.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.2</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab8/lab8_3.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.3</a></li>
+
             </ul>
         </div>
 
@@ -112,9 +106,11 @@ include '../includes/header.php';
         <div style="background: white; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin: 0 0 10px; color: #ac0000ff;">Lab 9</h3>
             <ul style="list-style: none; padding: 0;">
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.1</a></li>
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.2</a></li>
-                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/shop.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab8.3</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab9/lab9_1/index.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab9.1</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab9/lab9_2/index.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab9.2</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab9/lab9_3/index.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab9.3</a></li>
+                <li style="margin: 5px 0; background: #e9ecef; padding: 5px; border-radius: 4px;"><a href="<?php echo BASE_URL; ?>pages/labs/Lab9/lab9_4/index.php" style="text-decoration: none; color: #007bff; font-weight: bold;">Lab9.4</a></li>
+
             </ul>
         </div>
     </div>

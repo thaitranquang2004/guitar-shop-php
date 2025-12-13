@@ -6,7 +6,7 @@ $success = '';
 $error = '';
 
 // Get current admin info
-$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+$stmt = $pdo->prepare("SELECT * FROM userss WHERE id = ?");
 $stmt->execute([$_SESSION['user_id']]);
 $user = $stmt->fetch();
 
@@ -18,17 +18,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Update info
     if (!empty($password)) {
         // Plain text as requested
-        $stmt = $pdo->prepare("UPDATE users SET full_name = ?, email = ?, password = ? WHERE id = ?");
+        $stmt = $pdo->prepare("UPDATE userss SET full_name = ?, email = ?, password = ? WHERE id = ?");
         $result = $stmt->execute([$fullName, $email, $password, $_SESSION['user_id']]);
     } else {
-        $stmt = $pdo->prepare("UPDATE users SET full_name = ?, email = ? WHERE id = ?");
+        $stmt = $pdo->prepare("UPDATE userss SET full_name = ?, email = ? WHERE id = ?");
         $result = $stmt->execute([$fullName, $email, $_SESSION['user_id']]);
     }
     
     if ($result) {
         $success = "Cập nhật thông tin thành công!";
         // Refresh user data
-        $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+        $stmt = $pdo->prepare("SELECT * FROM userss WHERE id = ?");
         $stmt->execute([$_SESSION['user_id']]);
         $user = $stmt->fetch();
     } else {

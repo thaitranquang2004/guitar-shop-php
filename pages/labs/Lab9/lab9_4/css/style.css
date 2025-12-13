@@ -1,0 +1,7 @@
+/* CSS Document */
+.boxleft{background:#CCF; margin:3px}
+
+.book{ height:70px; background:#FCF; margin:3px; }
+div.itemmenu {min-width:20px; float:left;  background:#C09; border-left-color:#FFF; border-left-style:solid}
+div.itemmenusearch {min-width:210px; float:right;  border-left-color:#FFF; border-left-style:solid; padding-left:}
+div.itemmenusearch input[type=submit]{background-image:url(../image/search-icon.png); background-repeat:no-repeat; background-position:center; width:50px}

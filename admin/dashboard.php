@@ -5,7 +5,7 @@ include 'includes/header.php';
 // Stats
 $productCount = $pdo->query("SELECT COUNT(*) FROM products")->fetchColumn();
 $orderCount = $pdo->query("SELECT COUNT(*) FROM orders")->fetchColumn();
-$userCount = $pdo->query("SELECT COUNT(*) FROM users WHERE role='customer'")->fetchColumn();
+$userCount = $pdo->query("SELECT COUNT(*) FROM userss WHERE role='customer'")->fetchColumn();
 $revenue = $pdo->query("SELECT SUM(total_amount) FROM orders WHERE status='completed'")->fetchColumn();
 
 // Recent Orders
