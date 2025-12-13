@@ -5,8 +5,11 @@ $message = ''; $error = '';
 if ($_POST && isset($_POST['setup'])):  // Submit form để chạy setup
     try {
 
-        // DROP tất cả tables nếu tồn tại (bắt đầu với users như yêu cầu, sau đó các table khác để an toàn khi chạy lại)
-        $tables_to_drop = ['userss', 'users', 'products', 'order_items', 'order_detail', 'orders', '`order`', 'book', 'news', 'blog_posts', 'banners', 'admin', 'publisher', 'category'];
+        // Tắt kiểm tra FK để drop tables mà không lỗi dependency (như order_items depend on products)
+        $pdo->exec("SET FOREIGN_KEY_CHECKS = 0");
+
+        // DROP tất cả tables nếu tồn tại (bắt đầu với users như yêu cầu, sau đó các table khác theo thứ tự an toàn)
+        $tables_to_drop = ['users', 'userss'];
         foreach ($tables_to_drop as $table) {
             $pdo->exec("DROP TABLE IF EXISTS $table");
         }
