@@ -5,8 +5,17 @@ $message = ''; $error = '';
 if ($_POST && isset($_POST['setup'])):  // Submit form để chạy setup
     try {
 
-        // 1. Tắt kiểm tra FK để drop tables an toàn
-        $pdo->exec("SET FOREIGN_KEY_CHECKS = 0");
+        // Phát hiện loại DB để xử lý FK checks
+        $driver = $pdo->getAttribute(PDO::ATTR_DRIVER_NAME);
+        $isMysql = ($driver === 'mysql');
+        $isPgsql = ($driver === 'pgsql');
+
+        // Tắt kiểm tra FK để drop tables (MySQL hoặc PG)
+        if ($isMysql) {
+            $pdo->exec("SET FOREIGN_KEY_CHECKS = 0");
+        } elseif ($isPgsql) {
+            $pdo->exec("SET session_replication_role = replica;");
+        }
 
         // 2. DROP tất cả tables cũ (14 tables)
         $tables_to_drop = [
@@ -18,8 +27,12 @@ if ($_POST && isset($_POST['setup'])):  // Submit form để chạy setup
             $pdo->exec("DROP TABLE IF EXISTS `$table`");
         }
 
-        // 3. Bật lại kiểm tra FK
-        $pdo->exec("SET FOREIGN_KEY_CHECKS = 1");
+        // Bật lại kiểm tra FK sau khi drop
+        if ($isMysql) {
+            $pdo->exec("SET FOREIGN_KEY_CHECKS = 1");
+        } elseif ($isPgsql) {
+            $pdo->exec("SET session_replication_role = DEFAULT;");
+        }
 
         // --- KHU VỰC TẠO TABLES (STRUCTURE) ---
 
