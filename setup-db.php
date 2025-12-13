@@ -13,8 +13,6 @@ if ($_POST && isset($_POST['setup'])):  // Submit form để chạy setup
         // Tắt kiểm tra FK để drop tables (MySQL hoặc PG)
         if ($isMysql) {
             $pdo->exec("SET FOREIGN_KEY_CHECKS = 0");
-        } elseif ($isPgsql) {
-            $pdo->exec("SET session_replication_role = replica;");
         }
 
         // 2. DROP tất cả tables cũ (14 tables)
@@ -24,14 +22,12 @@ if ($_POST && isset($_POST['setup'])):  // Submit form để chạy setup
             'admin', 'banners', 'blog_posts', 'news'
         ];
         foreach ($tables_to_drop as $table) {
-            $pdo->exec("DROP TABLE IF EXISTS `$table`");
+            $pdo->exec("DROP TABLE IF EXISTS $table CASCADE");
         }
 
         // Bật lại kiểm tra FK sau khi drop
         if ($isMysql) {
             $pdo->exec("SET FOREIGN_KEY_CHECKS = 1");
-        } elseif ($isPgsql) {
-            $pdo->exec("SET session_replication_role = DEFAULT;");
         }
 
         // --- KHU VỰC TẠO TABLES (STRUCTURE) ---
