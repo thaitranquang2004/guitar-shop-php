@@ -17,7 +17,7 @@ if ($_POST && isset($_POST['setup'])):  // Submit form để chạy setup
 
         // 2. DROP tất cả tables cũ (14 tables)
         $tables_to_drop = [
-            'order_detail', 'order_items', 'book', 'order', 'orders', 
+            'order_detail', 'order_items', 'book', '"order"', 'orders', 
             'users', 'userss', 'category', 'publisher', 'products', 
             'admin', 'banners', 'blog_posts', 'news'
         ];
